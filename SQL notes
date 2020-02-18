@@ -1,0 +1,59 @@
+SQL notes
+
+Subset of the SQL: Data definition language (DDL): DDL is used to define the data structure it consists of the commands
+like CREATE, ALTER, DROP, etc.
+
+Data manipulation language (DML): DML is used to manipulate already existing data in the database. The commands in this
+category are SELECT, UPDATE, INSERT, etc.
+
+Data control language (DCL): DCL is used to control access to data in the database and includes commands such as GRANT,
+REVOKE.
+
+Primary key:-  a field or the combination of fields which uniquely specify a row. The Primary key is a special kind of
+unique key. Primary key values cannot be NULL.
+
+
+Normal Form	Description
+
+1NF	A relation is in 1NF if it contains an atomic value. 
+2NF A relation will be in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the primary key. 
+3NF	A relation will be in 3NF if it is in 2NF and no transition dependency exists. 
+4NF A relation will be in 4NF if it is in Boyce Codd normal form and has no multi-valued dependency.
+
+Que:- Convert/normalise table 
+
+
+Index:-
+SQL indexes are the medium of reducing the cost of the query as the high cost of the query will lead to the fall in the
+performance of the query. An index is used to increase the performance and allow faster retrieval of records from the
+table.
+
+B-Tree data structure used 
+
+self manage multilevel index -> B-tree
+
+B-Tree -> m-way search tree with some rules
+ 1) (floor value of m/2) children at inermediate node
+ 2) root node have atlest 2 child
+ 3) all leaf at same level
+
+
+Vertical scale in db - add new resource to existing 
+Horizontal scale in db - add new server to existing system.
+
+
+How sql index works?
+
+==> Create B-Tree structured data
+without this search engine uses table scan/sequence search until element not found.
+
+with primary key cluster-index automatically created.
+
+The clustered index is used to reorder the physical order of the table and search based on the key values
+cluster-index can be one or multiple column.
+
+==> CREATE Clustered index index_name
+    on tablename(column DESC/ASC);
+
+
+   for NonClustered
