@@ -1,2 +1,2 @@
 # Notes
-Key point in development
+Notes
