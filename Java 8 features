@@ -1,0 +1,25 @@
+Java 8 features
+
+1) Functional programming
+2) Lambda exp
+3) Stream API
+
+
+
+
+1) Define method in interface
+2) what is lambda expression
+
+
+Stream api helps to concurancy problem and achive functional programming
+
+1) stream() //method
+
+Diamond problem:
+if both has same method name then while calling in create confliction.
+therefore java not support multiple inheritance
+
+
+in interface bydefault all method are public abstract
+
+internal loops===> forEach
